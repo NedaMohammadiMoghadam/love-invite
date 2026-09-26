@@ -9,9 +9,7 @@
 
 <title>دعوت خاص ❤️</title>
 
-
 <link rel="stylesheet" href="style.css">
-
 
 </head>
 
@@ -19,84 +17,48 @@
 <body>
 
 
-<!-- محل نمایش صحنه سه بعدی -->
-
-<div id="scene-container"></div>
+<div class="page">
 
 
-
-<!-- رابط کاربری روی صحنه -->
-
-<div class="ui">
+<div class="card">
 
 
-<div class="intro">
+<div class="icon">
+💌
+</div>
 
 
 <h1>
-یک دعوت خاص...
+یک دعوت خاص برای تو...
 </h1>
 
 
 <p>
 یک لحظه وقت داری؟
 <br>
-یک خاطره قشنگ منتظر توست ❤️
-</p>
-
-
-<button id="startBtn">
-شروع ✨
-</button>
-
-
-</div>
-
-
-
-<div class="invite" id="invite">
-
-
-<h2>
-دوست دارم یک قرار داشته باشیم ❤️
-</h2>
-
-
-<p>
-تاریخ و مکان را انتخاب کن:
+یک پیشنهاد قشنگ دارم ❤️
 </p>
 
 
 
 <input 
 id="date"
-placeholder="📅 تاریخ قرار">
+placeholder="تاریخ قرار">
 
 
 <input 
 id="place"
-placeholder="📍 مکان قرار">
+placeholder="مکان قرار">
 
 
 
-<div>
-
-
-<button 
-class="yes"
-onclick="accept()">
-
+<button onclick="accept()">
 قبول می‌کنم ❤️
-
 </button>
 
 
-<button 
-class="no"
-onclick="noAnswer()">
-
+<button onclick="noAnswer()">
 نه 😅
-
 </button>
 
 
@@ -106,33 +68,8 @@ onclick="noAnswer()">
 </div>
 
 
-</div>
-
-
-
-
-
-<!-- موتور سه بعدی -->
-
-<script src="https://cdn.jsdelivr.net/npm/three@0.128/build/three.min.js"></script>
-
-
-<!-- خواندن مدل های سه بعدی -->
-
-<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
-
-
-
-<!-- صحنه -->
-
-<script src="scene.js"></script>
-
-
-
-<!-- منطق دکمه ها -->
 
 <script src="script.js"></script>
-
 
 
 </body>
