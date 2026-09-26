@@ -2,17 +2,103 @@
 <html lang="fa" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>دعوت خاص ❤️</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+
+
 </head>
+
 
 <body>
 
-<h1>سلام ❤️</h1>
 
-<p>
-کارت دعوت من آماده است
+
+<div class="hearts">
+
+<span>❤️</span>
+<span>✨</span>
+<span>❤️</span>
+<span>✨</span>
+
+</div>
+
+
+
+<div class="card" id="card">
+
+
+<div class="envelope">
+💌
+</div>
+
+
+<h1>
+یک دعوت خاص برای تو...
+</h1>
+
+
+<p class="typing">
+
+یه قرار کوچیک می‌تونه تبدیل به یک خاطره قشنگ بشه 😊
+
 </p>
+
+
+
+<input id="date" placeholder="📅 تاریخ قرار">
+
+
+<input id="place" placeholder="📍 کجا دوست داری بریم؟">
+
+
+
+<h2>
+قبول می‌کنی؟ ❤️
+</h2>
+
+
+
+<button class="yes" onclick="accept()">
+آره میام 😍
+</button>
+
+
+
+<button class="no" onclick="noAnswer()">
+نه 😅
+</button>
+
+
+
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+
+
+<script src="script.js"></script>
+
+
 
 </body>
 
