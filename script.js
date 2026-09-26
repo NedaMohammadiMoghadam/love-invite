@@ -1,57 +1,41 @@
-// فعال کردن تقویم شمسی
-$("#date").persianDatepicker({
-    format: "YYYY/MM/DD",
-    autoClose: true
-});
-
-
-// قبول کردن دعوت
-
 function accept(){
 
 let date = document.getElementById("date").value;
 let place = document.getElementById("place").value;
 
 
-if(date=="" || place==""){
+if(date === "" || place === ""){
 
-alert("اول تاریخ و مکان قرار رو مشخص کن 😊");
+alert("لطفاً تاریخ و مکان قرار را وارد کن 😊");
+
 return;
 
 }
 
 
-document.getElementById("card").innerHTML = `
+document.querySelector(".card").innerHTML = `
 
-<div class="face boom">
+<div class="icon">
 😍❤️
 </div>
 
 
 <h1>
-وای قبول کردی!
+قرار ثبت شد!
 </h1>
 
 
 <p>
 
-قرارمون ثبت شد ✨
+📅 ${date}
 
 <br><br>
 
-📅 تاریخ:
-<br>
-${date}
+📍 ${place}
 
 <br><br>
 
-📍 مکان:
-<br>
-${place}
-
-<br><br>
-
-منتظر یک روز قشنگ باش ❤️
+منتظر یک خاطره قشنگ باش ✨
 
 </p>
 
@@ -62,35 +46,31 @@ ${place}
 
 
 
-// وقتی نه می زند
-
 function noAnswer(){
 
 
-document.getElementById("card").innerHTML = `
+document.querySelector(".card").innerHTML = `
 
 
-<div class="face">
+<div class="icon">
 😳
 </div>
 
 
 <h1>
-یک سوال مهم...
+یک سوال...
 </h1>
 
 
 <p>
 
-این «نه» قاطع بود؟
-😂
+این نه قاطع بود؟ 😂
 
 <br><br>
 
-یا هنوز نیاز به تلاش بیشتر دارم؟
+یا نیاز به تلاش بیشتر دارم؟
 
 </p>
-
 
 
 <button onclick="finalNo()">
@@ -110,15 +90,13 @@ document.getElementById("card").innerHTML = `
 
 
 
-// نه قاطع
-
 function finalNo(){
 
 
-document.getElementById("card").innerHTML = `
+document.querySelector(".card").innerHTML = `
 
 
-<div class="face">
+<div class="icon">
 🥺💔
 </div>
 
@@ -129,13 +107,7 @@ document.getElementById("card").innerHTML = `
 
 
 <p>
-
-پیامت رو گرفتم.
-
-<br><br>
-
-شاید یک روز با یک دعوت بهتر برگردم ❤️
-
+پیامت رو گرفتم ❤️
 </p>
 
 
@@ -146,16 +118,13 @@ document.getElementById("card").innerHTML = `
 
 
 
-
-// تلاش بیشتر
-
 function tryAgain(){
 
 
-document.getElementById("card").innerHTML = `
+document.querySelector(".card").innerHTML = `
 
 
-<div class="face">
+<div class="icon">
 😄✨
 </div>
 
@@ -166,9 +135,7 @@ document.getElementById("card").innerHTML = `
 
 
 <p>
-
-به زودی با یک درخواست بهتر و جذاب‌تر میام ❤️
-
+به زودی با یک دعوت بهتر میام ❤️
 </p>
 
 
