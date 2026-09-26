@@ -19,24 +19,51 @@
 <body>
 
 
-<!-- صحنه سه بعدی اینجا ساخته می شود -->
+<!-- محل نمایش صحنه سه بعدی -->
 
+<div id="scene-container"></div>
+
+
+
+<!-- رابط کاربری روی صحنه -->
 
 <div class="ui">
 
 
-<div class="card" id="card">
+<div class="intro">
 
 
 <h1>
-یک دعوت خاص ❤️
+یک دعوت خاص...
 </h1>
 
 
 <p>
 یک لحظه وقت داری؟
 <br>
-یک پیشنهاد کوچک دارم...
+یک خاطره قشنگ منتظر توست ❤️
+</p>
+
+
+<button id="startBtn">
+شروع ✨
+</button>
+
+
+</div>
+
+
+
+<div class="invite" id="invite">
+
+
+<h2>
+دوست دارم یک قرار داشته باشیم ❤️
+</h2>
+
+
+<p>
+تاریخ و مکان را انتخاب کن:
 </p>
 
 
@@ -85,13 +112,18 @@ onclick="noAnswer()">
 
 
 
-<!-- کتابخانه Three.js -->
+<!-- موتور سه بعدی -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/build/three.min.js"></script>
+
+
+<!-- خواندن مدل های سه بعدی -->
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
 
 
 
-<!-- موتور صحنه سه بعدی -->
+<!-- صحنه -->
 
 <script src="scene.js"></script>
 
@@ -104,6 +136,5 @@ onclick="noAnswer()">
 
 
 </body>
-
 
 </html>
