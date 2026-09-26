@@ -4,11 +4,14 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>یک دعوت خاص ❤️</title>
+<title>دعوت خاص ❤️</title>
+
 
 <link rel="stylesheet" href="style.css">
+
 
 </head>
 
@@ -16,25 +19,14 @@
 <body>
 
 
-<div class="scene">
+<!-- صحنه سه بعدی اینجا ساخته می شود -->
 
 
-<div class="stars">
-<span>✦</span>
-<span>✧</span>
-<span>✦</span>
-<span>✧</span>
-</div>
+<div class="ui">
 
 
+<div class="card" id="card">
 
-<div class="envelope" onclick="openLetter()">
-
-
-<div class="flap"></div>
-
-
-<div class="letter">
 
 <h1>
 یک دعوت خاص ❤️
@@ -42,12 +34,42 @@
 
 
 <p>
-برای یک خاطره قشنگ...
+یک لحظه وقت داری؟
+<br>
+یک پیشنهاد کوچک دارم...
 </p>
 
 
-<button>
-باز کن ✨
+
+<input 
+id="date"
+placeholder="📅 تاریخ قرار">
+
+
+<input 
+id="place"
+placeholder="📍 مکان قرار">
+
+
+
+<div>
+
+
+<button 
+class="yes"
+onclick="accept()">
+
+قبول می‌کنم ❤️
+
+</button>
+
+
+<button 
+class="no"
+onclick="noAnswer()">
+
+نه 😅
+
 </button>
 
 
@@ -61,8 +83,27 @@
 
 
 
+
+
+<!-- کتابخانه Three.js -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+
+<!-- موتور صحنه سه بعدی -->
+
+<script src="scene.js"></script>
+
+
+
+<!-- منطق دکمه ها -->
+
 <script src="script.js"></script>
 
+
+
 </body>
+
 
 </html>
